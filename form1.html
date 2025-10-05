@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADMISSION FORM</title>
+    
+    <style>
+       * {
+            box-sizing: border-box;
+            margin-top: 1;
+            font-family: "Lato", sans-serif;
+            background-color: floralwhite;
+       }
+
+   h1{
+    text-align: center;
+    color: darkred;
+    background-color: floralwhite;
+   }
+   input {
+    padding: 2px;
+    border: 2px;
+
+   }
+
+   div {
+    color: green;
+   }
+   label {
+    color: black;
+   }
+   p {
+    font-style: italic;
+   }
+   button {
+     background-color: black;
+     color: floralwhite;
+   }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="color:brown;">ADMISSION FORM</h1>
+    </header>
+    <form>
+      <div>
+        <label for="sname">NAME:</label>
+        <input type="text" id="sname" />
+      </div>
+      <br>
+      <div>
+        <label for="email">ENTER YOUR EMAIL:</label>
+        <input type="email" id="email" />
+      </div>
+      <br>
+      <div>
+        <label for="ph">ENTER YOUR PHONE NUMBER:</label>
+        <input type="tel" maxlength="10" id="ph" />
+      </div>
+      <br>
+      <div>
+        <label for="age">ENTER YOUR AGE:</label>
+        <input type="number" max="60" min="15" />
+      </div>
+      <br>
+      <div>
+        <label for="dob">ENTER YOUR DATE OF BIRTH:</label>
+        <input type="date" min="1955-01-01" max="2010-01-01" />
+      </div>
+      <div>
+        <p><strong>GENDER:</strong></p>
+        <label for="male"> MALE</label>
+        <input type="radio" id="male" name="gender" />
+        <label for="female"> FEMALE</label>
+        <input type="radio" id="female" name="gender" />
+        <label for="other"> OTHER</label>
+        <input type="radio" id="other" name="gender" />
+      </div>
+      <div>
+        <p><strong>SELECT THE <span style="color: brown;">SERVICES</span> YOU WANT:</strong></p>
+        <label for="service">BUS</label>
+        <input type="checkbox" id="service" />
+        <label for="service">MESS</label>
+        <input type="checkbox" id="service" />
+        <label for="service">HOSTEL</label>
+        <input type="checkbox" id="service" />
+      </div>
+      <div>
+        <p><strong>FOOD PREFERENCE</strong></p>
+        <label for="food">VEG</label>
+        <input type="radio" id="food" name="food" />
+        <label for="FOO">NON-VEG</label>
+        <input type="radio" id="FOO" name="food" />
+      </div>
+      <div>
+        <p><strong>BLOOD GROUP</strong></p>
+        <select name="bgroup" id="bgroup">
+          <option value="A+">A+</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+        </select>
+        <label>IF NOT PRESENT:<input type="text"></label>
+      </div>
+      <div>
+        <p><strong>DESCRIBE YOURSELF(200 WORDS):</strong></p>
+        <textarea></textarea>
+      </div>
+      <footer>
+        <button>SUBMIT</button>
+        <input ID="R" type="reset" style="background-color: rgb(232, 203, 203);">
+      <footer>
+    </form>
+  </body>
+</html>

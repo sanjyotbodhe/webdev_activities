@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            width:325px;
+            margin:auto;
+            background: white;
+            border-radius: 16px;
+            border:2px solid black;
+            box-shadow: 0 0 2px black;
+            margin-top: 100px;
+            padding: 20px;
+        }
+        img{
+            height:140px;
+            width:250px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-left: 40px;
+        }
+        button{
+            background-color: rgb(67, 67, 245);
+            color: floralwhite;
+            border-radius: 8px;
+            margin:10px;
+            width:100px;
+            height:30px;
+            margin-left: 40px;
+            transition: transform 0.3s ease;
+        }
+        button:hover{
+            transform: scale(1.1);
+            background-color:olive;
+            color: black;
+
+        }
+        h2{
+            margin-left:70px;
+        }
+        @media (max-width:640px){
+            .card{
+                display:flex;
+                flex-direction:column;
+            }
+            button{
+                width:90%;
+                display:block;
+                margin:auto;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="Screenshot 2025-09-17 001647.png" alt="my image">
+        <h2>Kshitiz Loharuka</h2>
+        <p>Fresher at Scaler School of Technology | 19 years</p>
+        <button>CONTACT</button>
+        <BUTTON>PORTFOLIO</BUTTON>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes Gallery</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f8f9fa;
+        }
+        .shapes-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+        .shape-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .rectangle {
+            height: 150px;
+            width: 300px;
+            background-color: green;
+        }
+        .square {
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+        }
+        .circle {
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            background-color: red;
+        }
+        .diamond {
+            width: 100px;
+            height: 100px;
+            background: #007bff;
+            transform: rotate(45deg);
+        }
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 0 solid transparent;
+            border-bottom: 100px solid #007bff;
+        }
+        .label {
+            margin-top: 12px;
+            font-size: 1rem;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="shapes-container">
+        <div class="shape-item">
+            <div class="rectangle"></div>
+            <div class="label">Rectangle</div>
+        </div>
+        <div class="shape-item">
+            <div class="square"></div>
+            <div class="label">Square</div>
+        </div>
+        <div class="shape-item">
+            <div class="circle"></div>
+            <div class="label">Circle</div>
+        </div>
+        <div class="shape-item">
+            <div class="diamond"></div>
+            <div class="label">Diamond</div>
+        </div>
+        <div class="shape-item">
+            <div class="triangle"></div>
+            <div class="label">Triangle</div>
+        </div>
+    </div>
+</body>
+</html>
